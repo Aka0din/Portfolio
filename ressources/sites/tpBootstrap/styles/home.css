@@ -1,0 +1,66 @@
+.textBeige{
+    color: #eeebd0 !important;
+}
+
+.btnBeige{
+    color: #000 !important;
+    background-color: #eeebd0 !important;
+    border-color: #eeebd0;
+}
+
+.btnBeige:hover{
+    color: #000 !important;
+    background-color: #f1eed7 !important;
+    border-color: #f0edd5;
+}
+
+.sushi{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 60%;
+    transform: translate(0,-50%);
+}
+
+.homeHeight{
+    padding-bottom: 20vw;
+}
+
+.playfairFont{
+    font-family: "Playfair Display", sans-serif;
+}
+
+.bgBeige{
+    background-color: #eeebd0 !important;
+}
+
+.textDark1{
+    color: #3D3A4B !important;
+}
+
+.bgDark1{
+    background: #3D3A4B !important;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.btnShadeRed1{
+    color: #fff !important;
+    background-color: #c33838 !important;
+    border-color: #c33838 !important;
+}
+
+.h-300{
+    height: 300px !important;
+}
+
+.h-400{
+    height: 400px !important;
+}
+
+.bgMainRed{
+    background: #c70a0a !important;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./ressources/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>Diamond - Contact & Accès</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <nav class="navbar">
+                <div class="div-logo">
+                    <a href="index.html"><img src="./ressources/img/Korina Claudia.png" alt=""></a>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-bars ouvrir"></i>
+                    <i class="fas fa-times fermer"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="chambres.html">Chambres</a></li>
+                    <li><a href="suite.html">Suites</a></li>
+                    <li><a href="restau.html">Restaurant & Bar</a></li>
+                    <li><a href="bien-etre.html">Bien-être</a></li>
+                    <li><a href="avis.html">Avis</a></li>
+                    <li><a href="contact.html">Contact & Acces</a></li>
+                </ul>
+            </nav>
+            <div class="div-text-accueil">
+                <div>
+                    <p>Diamond Hotel</p>
+                    <h1>Contact & Accès</h1>
+                    <a href="#info-contact"><button class="btn-text-accueil">Venir au Diamond Hotel</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="info-contact">
+        <div class="container-info-contact">
+            <div class="div-gauche-info-contact">
+                <div class="div-img-info">
+                    <img src="./ressources/img/paris.jpg" alt="Photo de Paris">
+                </div>
+                <div class="div-map-info">
+                    <div id="map">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="div-droite-info-contact">
+                <div class="div-title-info-contact">
+                    <h1 class="uppercase">Contactez-nous</h1>
+                </div>
+                <div class="container-block-info">
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>DIAMOND HOTEL</h4>
+                        </div>
+                        <div class="adress-info">
+                            <p>30 Rue la Pérouse, 75016 Paris</p>
+                        </div>
+                        <div class="tel-info">
+                            <p>Tél : <a href="#">+33 1 45 00 83 70</a></p>
+                        </div>
+                        <div class="fax-info">
+                            <p>Fax : <a href="#">+33 1 45 00 29 48</a></p>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">reservation@diamond-hotel.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>COMMUNICATION & RELATION PRESSE</h4>
+                        </div>
+                        <div class="adress-info">
+                            <p>Shooting, photo, tournage cinéma et TV, événementiel</p>
+                        </div>
+                        <div class="tel-info">
+                            <p>Tél : <a href="#">+33 1 42 60 94 04</a></p>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">communication@hotels-baverez.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>DÉLÉGUÉ A LA PROTECTION DES DONNÉES</h4>
+                        </div>
+                        <div class="tel-info">
+                            <p>Tél : <a href="#">+33 1 42 60 31 10</a></p>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">contact-DPO@hotels-baverez.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>RECRUTEMENT</h4>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">recrutement@hotels-baverez.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>SERVICES ÉVÉNEMENTIELS</h4>
+                        </div>
+                        <div class="tel-info">
+                            <p>Tél : <a href="#">+33 1 45 00 83 70</a></p>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">reservation@diamond-hotel.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>RÉSERVATIONS DE GROUPES</h4>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">group@hotels-baverez.com</a>
+                        </div>
+                    </div>
+                    <div class="div-block-info-contact">
+                        <div class="title-info">
+                            <h4>COMMERCIAL</h4>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">sales@hotels-baverez.com</a>
+                        </div>
+                        <div class="email-info">
+                            <a href="#">SalesNorthAmerica@hotels-baverez.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-contact">
+        <div class="container-form-contact">
+            <div class="title-form-contact">
+                <h4>Une question ? Un conseil ?</h4>
+                <h3>Contactez-nous</h3>
+            </div>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Nom *" required>
+                <input type="email" name="email" placeholder="Email *" required>
+                <input type="text" name="subject" placeholder="Sujet *" required>
+                <input type="text" name="number" placeholder="Numéro de téléphone">
+                <textarea name="message" placeholder="Votre message *" required></textarea>
+                <button>Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="link-img">
+        <div class="container-link-img">
+            <div class="card-link-img">
+                <a href="suite.html">
+                    <img src="./ressources/img/suite1.png" alt="">
+                    <h3 class="uppercase">Suites</h3>
+                    <p class="italic">Synonymes de luxe et de raffinement</p>
+                </a>
+            </div>
+            <div class="card-link-img">
+                <a href="chambres.html">
+                    <img src="./ressources/img/chambre1.png" alt="">
+                    <h3 class="uppercase">Chambres</h3>
+                    <p class="italic">Le luxe parisien intemporel</p>
+                </a>
+            </div>
+            <div class="card-link-img">
+                <a href="avis.html">
+                    <img src="./ressources/img/contact1.webp" alt="">
+                    <h3 class="uppercase">Avis</h3>
+                    <p class="italic">Des séjours inoubliables au Diamond Hotel</p>
+                </a>
+            </div>
+            <div class="card-link-img">
+                <a href="bien-etre.html">
+                    <img src="./ressources/img/spa1.jpg" alt="">
+                    <h3 class="uppercase">Bien-être</h3>
+                    <p class="italic">Un oasis de tranquillité</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter">
+        <div class="container-newsletter">
+            <div class="separateur-nl"></div>
+            <h4 class="uppercase">Restez informés</h4>
+            <p>Inscrivez-vous à notre newsletter & recevez l'essentiel de l'actualité de l'Hotel Diamond</p>
+            <div class="input-nl">
+                <input type="email" placeholder="Entrez votre E-mail">
+                <button>Envoyer</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="container-footer">
+            <div class="div-txt-footer">
+                <h3>Diamond Hotel</h3>
+                <p>30 Rue la Pérouse 75016 Paris</p>
+                <p>Tel : <a href="#">+33 1 45 00 83 70</a></p>
+                <a href="#">reservation@diamond-hotel.com</a>
+            </div>
+            <div class="div-droite-footer">
+                <div class="div-img-footer">
+                    <img src="./ressources/img/Korina Claudia.png" alt="">
+                </div>
+                <hr />
+                <div class="div-icons-reseaux">
+                    <!--FB/Twitter/pinterest/insta/tripatvisor-->
+                    <a href="#"><i class="fa-brands fa-facebook icon-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter icon-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest icon-footer"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon-footer"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="./js/contact.js"></script>
+
+</body>
+</html>

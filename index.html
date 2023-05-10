@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./ressources/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b7aab7d075.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="yoann"><span class="yRed">Y</span>oann.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="d-flex">
+                <div class="headerImg">
+                    <div class="containerAvatar">
+                        <img class="avatar" src="./ressources/img/Cartoonify.png" alt="Avatar cartoon">
+                    </div>
+                </div>
+                <div class="headerText">
+                    <p>Développeur Web</p>
+                    <h1>Hello, Je suis <span class="yRed">Yoann</span><br> Herbel de Paris</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1">
+                    <img src="./ressources/img/visage.jpg" alt="Image d'un visage déformé">
+                </div>
+                <div class="aboutCol2">
+                    <h2 class="subTitle">À Propos</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, debitis ipsum? Exercitationem
+                        autem voluptate voluptatem eius nobis ullam illo blanditiis tempore quidem explicabo maiores
+                        odit, ad numquam beatae, qui consequuntur!</p>
+                    <div class="tabTitles">
+                        <p class="tabLinks activeLink" onclick="opentab('skills')">Compétences</p>
+                        <p class="tabLinks" onclick="opentab('experience')">Expériences</p>
+                        <p class="tabLinks" onclick="opentab('education')">Diplomes & Formations</p>
+                    </div>
+                    <div class="tabContents activeTab" id="skills">
+                        <ul>
+                            <li><span>Développement Web - Front</span><br>HTML / CSS / JAVASCRIPT</li>
+                            <li><span>Développement Web - Back</span><br>PHP / SYMFONY</li>
+                            <li><span>Développement d'Applications</span><br>Création d'applications Android/iOS </li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>TP Réalisés lors de la Formation</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Formation Développeur Web et Mobile</li>
+                            <li><span>2020</span><br>Formation Développeur Web et Mobile</li>
+                            <li><span>2013</span><br>Initiation à la PAO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICES-->
+
+    <div id="services">
+        <div class="container">
+            <h2 class="subTitle">Mes Services</h2>
+            <div class="servicesList">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Développement Web - Front</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellendus odio enim,
+                        dolorum mollitia explicabo distinctio, reprehenderit sequi architecto quos similique cupiditate?
+                    </p>
+                    <a href="#">En savoir plus</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>Développement Web - Back</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellendus odio enim,
+                        dolorum mollitia
+                        explicabo distinctio, reprehenderit sequi architecto quos similique cupiditate?</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>Développement Applications</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellendus odio enim,
+                        dolorum mollitia
+                        explicabo distinctio, reprehenderit sequi architecto quos similique cupiditate?</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PORTFOLIO-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="subTitle">Mes Projets</h2>
+            <div class="workList">
+                <div class="work">
+                    <img src="./ressources/img/caravane-falaise.jpg" alt="Photo d'une caravane">
+                    <div class="layer">
+                        <h3>Road Trip</h3>
+                        <p>Maquette d'un site de préparation de Road Trip.</p>
+                        <a href="./ressources/sites/evalFrontend-RoadTrip/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./ressources/img/page-suite-bg.jpg" alt="Photo d'une montagne dans la nuit">
+                    <div class="layer">
+                        <h3>Diamond Hotel</h3>
+                        <p>Maquette d'un site d'hotel de luxe.</p>
+                        <a href="./ressources/sites/diamond-hotel/index.html" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./ressources/img/home-background.jpg" alt="Photo d'un smartphone">
+                    <div class="layer">
+                        <h3>Japan Theme</h3>
+                        <p>Maquette d'un site de restaurant Japonais.</p>
+                        <a href="./ressources/sites/tpBootstrap/index.html" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Voir plus</a>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h2 class="subTitle">Contactez moi</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> yoann.herbel@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0677619950</p>
+                    <div class="socialIcons">
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./ressources/img/CVM.pdf" download class="btn btn2">Téléchargez mon CV</a>
+                </div>
+                <div class="contactRight">
+                    <form>
+                        <input type="text" name="Name" placeholder="Votre Nom" required>
+                        <input type="email" name="Email" placeholder="Votre Email" required>
+                        <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023. All rights reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tabLinks");
+        var tabcontents = document.getElementsByClassName("tabContents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activeLink");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activeTab");
+            }
+            event.currentTarget.classList.add("activeLink");
+            document.getElementById(tabname).classList.add("activeTab")
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-40%";
+        }
+
+    </script>
+
+</body>
+
+</html>
